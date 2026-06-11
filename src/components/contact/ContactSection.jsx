@@ -62,108 +62,108 @@ const ContactSection = () => {
     }
   };
 
-  return (
+ return (
+  <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-(--surface-soft) via-white to-(--surface)">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      {/* Heading */}
+      <div className="text-center mb-14 lg:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-(--primary)">
+          संपर्क करें
+        </h2>
 
-    <section className="py-24 bg-gradient-to-b from-(--surface-soft) to-(--surface)">
+        <p className="mt-5 text-base sm:text-lg text-(--muted) max-w-2xl mx-auto leading-8">
+          यदि आप गौ सेवा, दान या किसी अन्य जानकारी हेतु
+          हमसे जुड़ना चाहते हैं, तो नीचे दिए गए माध्यमों से
+          संपर्क करें।
+        </p>
+      </div>
 
-      <div className="max-w-7xl mx-auto px-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        
+        {/* Left Side */}
+        <div className="space-y-6">
 
-        {/* Heading */}
-        <div className="text-center mb-16">
-
-          <h2 className="text-4xl md:text-5xl font-bold text-(--primary)">
-            संपर्क करें
-          </h2>
-
-          <p className="mt-5 text-lg text-(--muted) max-w-2xl mx-auto leading-8">
-            यदि आप गौ सेवा, दान या किसी अन्य जानकारी हेतु
-            हमसे जुड़ना चाहते हैं, तो नीचे दिए गए माध्यमों से
-            संपर्क करें।
-          </p>
-
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-14 items-start">
-
-          {/* Left Side */}
-          <div className="space-y-8">
-
-            {/* Address */}
-            <div className="surface-card p-7 rounded-3xl flex items-start gap-5 hover:-translate-y-2 transition duration-300">
-
-              <div className="bg-[#1B5E20] text-white p-4 rounded-2xl text-2xl">
-                <FaMapMarkerAlt />
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-semibold text-(--primary)">
-                  हमारा पता
-                </h3>
-
-                <p className="mt-2 text-(--muted) leading-7">
-                  आचार्य श्री विद्यासागर दयोदय गौशाला,
-                  तेंदूखेड़ा, मध्यप्रदेश, भारत
-                </p>
-              </div>
-
+          {/* Address */}
+          <div className="bg-white shadow-lg border border-gray-100 p-6 sm:p-7 rounded-3xl flex items-start gap-5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-[#1B5E20] text-white p-4 rounded-2xl text-2xl shrink-0">
+              <FaMapMarkerAlt />
             </div>
 
-            {/* Phone */}
-            <div className="surface-card p-7 rounded-3xl flex items-start gap-5 hover:-translate-y-2 transition duration-300">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-semibold text-(--primary)">
+                हमारा पता
+              </h3>
 
-              <div className="bg-[#FF9933] text-white p-4 rounded-2xl text-2xl">
-                <FaPhoneAlt />
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-semibold text-(--primary)">
-                  मोबाइल नंबर
-                </h3>
-
-                <p className="mt-2 text-(--muted)">
-                  +91-9589807047
-                </p>
-              </div>
-
+              <p className="mt-2 text-(--muted) leading-7">
+                आचार्य श्री विद्यासागर दयोदय गौशाला,
+                तेंदूखेड़ा, मध्यप्रदेश, भारत
+              </p>
             </div>
-
-            {/* Email */}
-            <div className="surface-card p-7 rounded-3xl flex items-start gap-5 hover:-translate-y-2 transition duration-300">
-
-              <div className="bg-[#6D4C41] text-white p-4 rounded-2xl text-2xl">
-                <FaEnvelope />
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-semibold text-(--primary)">
-                  ईमेल पता
-                </h3>
-
-                <p className="mt-2 text-(--muted)">
-                  gaushalatendukheda@gmail.com
-                </p>
-              </div>
-
-            </div>
-
           </div>
 
-          {/* Right Side Form */}
-          <div className="surface-card bg-(--surface)/80 backdrop-blur-md p-7 md:p-8 rounded-3xl max-w-lg mx-auto w-full">
+          {/* Phone */}
+          <div className="bg-white shadow-lg border border-gray-100 p-6 sm:p-7 rounded-3xl flex items-start gap-5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-[#FF9933] text-white p-4 rounded-2xl text-2xl shrink-0">
+              <FaPhoneAlt />
+            </div>
 
-            <h3 className="text-3xl font-bold text-(--primary) mb-8">
-              संदेश भेजें
-            </h3>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-semibold text-(--primary)">
+                मोबाइल नंबर
+              </h3>
+
+              <a
+                href="tel:+919589807047"
+                className="mt-2 block text-(--muted) hover:text-green-700 transition"
+              >
+                +91 9589807047
+              </a>
+            </div>
+          </div>
+
+          {/* Email */}
+          <div className="bg-white shadow-lg border border-gray-100 p-6 sm:p-7 rounded-3xl flex items-start gap-5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-[#6D4C41] text-white p-4 rounded-2xl text-2xl shrink-0">
+              <FaEnvelope />
+            </div>
+
+            <div>
+              <h3 className="text-xl sm:text-2xl font-semibold text-(--primary)">
+                ईमेल पता
+              </h3>
+
+              <a
+                href="mailto:gaushalatendukheda@gmail.com"
+                className="mt-2 block text-(--muted) hover:text-green-700 transition break-all"
+              >
+                gaushalatendukheda@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side Form */}
+        <div className="w-full">
+          <div className="bg-white/90 backdrop-blur-xl shadow-2xl border border-gray-100 rounded-[32px] p-6 sm:p-8 md:p-10">
+
+            <div className="mb-8">
+              <h3 className="text-2xl sm:text-3xl font-bold text-(--primary)">
+                संदेश भेजें
+              </h3>
+
+              <p className="mt-2 text-sm sm:text-base text-(--muted)">
+                आपके सुझाव, प्रश्न अथवा गौ सेवा संबंधी जानकारी हेतु हमें संदेश भेजें।
+              </p>
+            </div>
 
             <form
-              className="space-y-6"
+              className="space-y-5"
               onSubmit={handleSubmit}
             >
-
               {/* Name */}
               <div>
-
-                <label className="block mb-2 text-(--muted) font-medium">
+                <label className="block mb-2 font-medium text-(--muted)">
                   आपका नाम
                 </label>
 
@@ -172,14 +172,15 @@ const ContactSection = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="नाम दर्ज करें"
+                  placeholder="अपना पूरा नाम दर्ज करें"
                   required
-                  className="w-full p-4 rounded-2xl border border-(--border) bg-(--surface) outline-none focus:border-(--primary)"
+                  className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-white outline-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
                 />
               </div>
+
               {/* Mobile */}
               <div>
-                <label className="block mb-2 text-(--muted) font-medium">
+                <label className="block mb-2 font-medium text-(--muted)">
                   मोबाइल नंबर
                 </label>
 
@@ -188,17 +189,15 @@ const ContactSection = () => {
                   name="mobile"
                   value={formData.mobile}
                   onChange={handleChange}
-                  placeholder="मोबाइल नंबर"
+                  placeholder="+91 9876543210"
                   required
-                  className="w-full p-4 rounded-2xl border border-(--border) bg-(--surface) outline-none focus:border-(--primary)"
+                  className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-white outline-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
                 />
-
               </div>
 
               {/* Email */}
               <div>
-
-                <label className="block mb-2 text-(--muted) font-medium">
+                <label className="block mb-2 font-medium text-(--muted)">
                   ईमेल पता
                 </label>
 
@@ -207,17 +206,15 @@ const ContactSection = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="ईमेल दर्ज करें"
+                  placeholder="example@gmail.com"
                   required
-                  className="w-full p-4 rounded-2xl border border-(--border) bg-(--surface) outline-none focus:border-(--primary)"
+                  className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-white outline-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
                 />
-
               </div>
 
               {/* Message */}
               <div>
-
-                <label className="block mb-2 text-(--muted) font-medium">
+                <label className="block mb-2 font-medium text-(--muted)">
                   संदेश
                 </label>
 
@@ -226,38 +223,32 @@ const ContactSection = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="अपना संदेश लिखें"
+                  placeholder="अपना संदेश यहाँ लिखें..."
                   required
-                  className="w-full p-4 rounded-2xl border border-(--border) bg-(--surface) outline-none focus:border-(--primary)"
+                  className="w-full px-5 py-4 rounded-2xl border border-gray-200 bg-white resize-none outline-none transition-all duration-300 focus:border-green-600 focus:ring-4 focus:ring-green-100"
                 />
-
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-full py-4 rounded-2xl text-lg font-semibold transition duration-300 shadow-lg text-white ${loading
-                  ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-(--accent) hover:opacity-90"
-                  }`}
-              >
-                {
+                className={`w-full py-4 rounded-2xl text-lg font-semibold text-white shadow-lg transition-all duration-300 ${
                   loading
-                    ? "Sending..."
-                    : "संदेश भेजें"
-                }
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-gradient-to-r from-green-700 via-green-600 to-green-500 hover:scale-[1.02] hover:shadow-2xl"
+                }`}
+              >
+                {loading ? "Sending..." : "संदेश भेजें"}
               </button>
-
             </form>
 
           </div>
-
         </div>
 
       </div>
-
-    </section>
-  );
+    </div>
+  </section>
+);
 };
 export default ContactSection;

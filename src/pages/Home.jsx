@@ -10,7 +10,6 @@ import ContactSection from "../components/contact/ContactSection";
 import Achievements from "../components/home/Achievements";
 import DonationAppeal from "../components/home/DonationAppeal";
 import LibrarySection from "../components/home/LibrarySection";
-import ProductsSection from "../components/home/ProductsSection";
 const Home = () => {
   return (
     <>
@@ -26,7 +25,7 @@ const Home = () => {
 <StatsSection />
 <DonationSection />
 
-<ProductsSection />
+
 
 <GallerySection />
 <Testimonials />

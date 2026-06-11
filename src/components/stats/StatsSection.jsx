@@ -6,7 +6,7 @@ const StatsSection = () => {
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-10 text-center">
 
         <div>
-          <CountUp end={500} duration={5} />+
+          <CountUp end={3000} duration={5} />+
           <p className="mt-3 text-lg">
             गौ माता
           </p>

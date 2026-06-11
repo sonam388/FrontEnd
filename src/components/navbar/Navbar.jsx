@@ -196,7 +196,7 @@ const Navbar = () => {
             onClick={toggleTheme}
             className="rounded-full border border-(--border) px-4 py-2 text-left"
           >
-            {theme === "light" ? "Switch to light mode" : "Switch to dark mode"}
+            {theme === "light" ? "dark" : "light"}
           </button>
 
           <Link
