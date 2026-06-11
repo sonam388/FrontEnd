@@ -22,7 +22,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-6 text-center">
 
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            हमारे बारे में Rishav
+            हमारे बारे में
           </h1>
 
           <p className="max-w-3xl mx-auto text-lg">
