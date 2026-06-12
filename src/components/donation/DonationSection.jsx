@@ -19,11 +19,11 @@ const DonationSection = () => {
 
           <div className="surface-card p-8 rounded-3xl">
             <h3 className="text-2xl font-bold text-(--primary)">
-              ₹1100
+              ₹2500
             </h3>
 
             <p className="mt-4 text-(--muted)">
-              एक दिन का गौ भोजन
+              कत्लखाने से गौमाता को बचाने हेतु
             </p>
           </div>
 

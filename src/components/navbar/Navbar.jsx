@@ -147,7 +147,7 @@ const Navbar = () => {
       </div>
 
       {siteMenuOpen && (
-        <div className="border-t border-(--border) bg-(--surface) px-5 pb-5 pt-4 font-medium text-(--text) md:hidden">
+        <div className="border-t border-(--border) bg-(--surface) px-5 pb-5 flex flex-col gap-4 font-medium text-(--text) md:hidden">
 
           <Link to="/" onClick={closeSiteMenu}>
             {t("home")}

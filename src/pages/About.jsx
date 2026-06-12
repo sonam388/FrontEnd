@@ -98,8 +98,8 @@ const About = () => {
             फरवरी 2016 में नई समिति के गठन के समय
             गौशाला में केवल 66 गौवंश थे।
             आज समाज एवं जीव दया प्रेमियों के सहयोग से
-            लगभग 1900 गौवंशों का संरक्षण किया जा रहा है।
-            गौशाला समिति भविष्य में 3000 गौवंशों के
+            लगभग 3200 गौवंशों का संरक्षण किया जा रहा है।
+            गौशाला समिति भविष्य में 5000 गौवंशों के
             संरक्षण हेतु निरंतर प्रयासरत है।
           </p>
 
@@ -121,7 +121,7 @@ const About = () => {
 
               <div className="surface-card p-8 rounded-3xl text-center">
               <h2 className="text-5xl font-bold text-(--primary)">
-                1900+
+                3200+
               </h2>
               <p className="mt-4 font-semibold">
                 संरक्षित गौवंश
@@ -133,13 +133,13 @@ const About = () => {
                 66 →
               </h2>
               <p className="mt-4 font-semibold">
-                1900 तक का सफर
+                5000 तक का सफर
               </p>
             </div>
 
             <div className="surface-card p-8 rounded-3xl text-center">
               <h2 className="text-5xl font-bold text-(--primary)">
-                3000
+                5000+
               </h2>
               <p className="mt-4 font-semibold">
                 भविष्य लक्ष्य

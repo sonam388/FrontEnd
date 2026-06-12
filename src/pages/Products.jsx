@@ -6,49 +6,42 @@ import {
 } from "react-icons/fa";
 
 const Products = () => {
-  const foodProducts = [
-    {
-      name: "जैविक गेहूँ",
-      price: "₹30 / किलो",
-      icon: "🌾",
-    },
-    {
-      name: "बासमती चावल",
-      price: "₹60 / किलो",
-      icon: "🍚",
-    },
-    {
-      name: "खंडा चावल",
-      price: "₹35 / किलो",
-      icon: "🍚",
-    },
-    {
-      name: "कनकी",
-      price: "₹20 / किलो",
-      icon: "🌾",
-    },
-  ];
+
 
   const utilityProducts = [
     {
-      name: "कछुआ खाद",
-      detail: "25 किलोग्राम",
+      name: "🌱 केंचुआ खाद",
+      detail: "उच्च गुणवत्ता वाली जैविक खाद",
+      description:
+        "प्राकृतिक एवं वैज्ञानिक विधि से तैयार की गई खाद जो मिट्टी की उर्वरता बढ़ाने, पौधों की जड़ों को मजबूत बनाने और उत्पादन बढ़ाने में सहायक है।",
     },
+
     {
-      name: "नॉर्मल खाद",
-      detail: "5 किलोग्राम",
+      name: "🌿 जैविक खाद",
+      detail: "गोबर एवं प्राकृतिक पदार्थों से निर्मित",
+      description:
+        "मिट्टी की गुणवत्ता सुधारने, सूक्ष्म जीवों की सक्रियता बढ़ाने तथा पौधों को आवश्यक पोषण प्रदान करने में सहायक।",
     },
+
     {
-      name: "गोमला",
-      detail: "25 नग",
+      name: "🪴 जैविक गमले",
+      detail: "पर्यावरण-अनुकूल गमले",
+      description:
+        "प्राकृतिक जैविक तत्वों से निर्मित विशेष गमले जो पौधों के बेहतर विकास और अतिरिक्त पोषण में सहायक हैं।",
     },
+
     {
-      name: "कंडा",
-      detail: "5 नग",
+      name: "🔥 गोबर कंडे",
+      detail: "पूजन एवं घरेलू उपयोग हेतु",
+      description:
+        "यज्ञ, हवन, धार्मिक अनुष्ठानों एवं प्राकृतिक ईंधन के रूप में उपयोग होने वाला शुद्ध एवं पर्यावरण-अनुकूल उत्पाद।",
     },
+
     {
-      name: "मच्छर कंडा",
-      detail: "50 पैकेट / 10 कंडे",
+      name: "🦟 मच्छर कंडे",
+      detail: "प्राकृतिक मच्छर प्रतिरोधक",
+      description:
+        "गोबर एवं औषधीय तत्वों से निर्मित, जो मच्छरों और अन्य कीटों को प्राकृतिक रूप से दूर रखने में सहायक है।",
     },
   ];
 
@@ -72,66 +65,39 @@ const Products = () => {
 
         </div>
       </section>
-
-      {/* Organic Products */}
-
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-4xl font-bold text-center text-(--primary) mb-12">
-            जैविक खाद्य उत्पाद
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-            {foodProducts.map((item, index) => (
-              <div
-                key={index}
-                className="surface-card rounded-3xl p-8 text-center hover:-translate-y-2 transition"
-              >
-                <div className="text-5xl mb-4">
-                  {item.icon}
-                </div>
-
-                <h3 className="text-xl font-bold mb-3">
-                  {item.name}
-                </h3>
-
-                <p className="text-(--primary) text-2xl font-bold">
-                  {item.price}
-                </p>
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-      </section>
-
       {/* Utility Products */}
 
       <section className="py-20 bg-(--surface)">
         <div className="max-w-7xl mx-auto px-6">
 
-          <h2 className="text-4xl font-bold text-center text-(--primary) mb-12">
+          <h2 className="text-4xl font-bold text-center text-(--primary) mb-4">
             गौशाला उपयोगी उत्पाद
           </h2>
+
+          <p className="text-center text-(--muted) max-w-4xl mx-auto mb-12">
+            गौशाला तेंदूखेड़ा द्वारा निर्मित प्राकृतिक एवं जैविक उत्पाद,
+            जो पर्यावरण संरक्षण, जैविक खेती और गौसेवा को बढ़ावा देते हैं।
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {utilityProducts.map((item, index) => (
               <div
                 key={index}
-                className="surface-card rounded-3xl p-8 text-center"
+                className="surface-card rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition duration-300"
               >
-                <FaSeedling className="mx-auto text-4xl text-(--primary) mb-4" />
+                <FaSeedling className="text-5xl text-(--primary) mb-5" />
 
-                <h3 className="text-xl font-bold mb-3">
+                <h3 className="text-2xl font-bold text-(--primary) mb-3">
                   {item.name}
                 </h3>
 
-                <p className="text-(--muted)">
+                <p className="font-semibold text-[#FF9933] mb-4">
                   {item.detail}
+                </p>
+
+                <p className="text-(--muted) leading-relaxed">
+                  {item.description}
                 </p>
               </div>
             ))}

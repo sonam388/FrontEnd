@@ -105,26 +105,10 @@ const Blogs = () => {
                 </button>
                 <button
                   onClick={() => navigate(`/admin/edit-blog/${blog._id}`)}
-                  className="bg-blue-500 text-white px-4 py-2 rounded-lg mr-2"
+                  className="mt-5 w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-xl"
                 >
                   Edit
                 </button>
-
-                <button
-                  onClick={() => deleteBlog(blog._id)}
-                  className="bg-red-500 text-white px-4 py-2 rounded-lg"
-                >
-                  Delete
-                </button>
-                <button
-                  onClick={() =>
-                    navigate(`/admin/edit-blog/${blog._id}`)
-                  }
-                  className="bg-blue-500 text-white px-4 py-2 rounded-lg"
-                >
-                  Edit
-                </button>
-
               </div>
             </div>
           ))}
