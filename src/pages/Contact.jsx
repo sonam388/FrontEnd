@@ -51,6 +51,73 @@ const Contact = () => {
     }
   };
 
+
+  const managementCommittee = [
+  {
+    name: "श्री संजय कुमार जैन पारसमणी",
+    post: "अध्यक्ष",
+  },
+  {
+    name: "श्री विवेक कुमार चौधरी",
+    post: "उपाध्यक्ष",
+  },
+  {
+    name: "श्री संदीप मोदी",
+    post: "उपाध्यक्ष",
+  },
+  {
+    name: "श्री अमरचंद जैन",
+    post: "महामंत्री",
+  },
+  {
+    name: "श्री कुलदीप मोदी",
+    post: "कोषाध्यक्ष",
+  },
+  {
+    name: "श्री सतेंद्र जैन (शिक्षक)",
+    post: "सचिव",
+  },
+  {
+    name: "श्री विनोद जैन (रियाना)",
+    post: "मंत्री",
+  },
+  {
+    name: "श्री विकास पांडे",
+    post: "प्रचार मंत्री",
+  },
+  {
+    name: "श्री प्रकाश जैन (दगोह)",
+    post: "विधि सलाहकार",
+  },
+  {
+    name: "श्रीमती ज्योति जैन (ल्ली)",
+    post: "सह मंत्री",
+  },
+  {
+    name: "श्री रविन्द्र सिंधई",
+    post: "सह सचिव",
+  },
+  {
+    name: "श्री राजकुमार जैन",
+    post: "सह प्रचार मंत्री",
+  },
+  {
+    name: "श्री राहुल जैन (प्रभु छाया)",
+    post: "सह कोषाध्यक्ष",
+  },
+  {
+    name: "श्रीमती स्वाति सिंधई",
+    post: "विशिष्ट सदस्य",
+  },
+  {
+    name: "श्रीमती ज्योति नायक",
+    post: "विशिष्ट सदस्य",
+  },
+  {
+    name: "श्री शरद गोयल",
+    post: "विशिष्ट सदस्य",
+  },
+];
   return (
     <div className="bg-(--surface-soft) min-h-screen">
 
@@ -190,7 +257,12 @@ const Contact = () => {
 
           <h3 className="text-2xl font-bold mt-5 text-[#6D4C41]">
             श्री अरविंद मोदी
-          </h3>
+          </h3> 
+            <div className="mt-5 bg-green-50 rounded-2xl p-3">
+            <p className="font-medium">
+              📞 मो.: 9870849573
+            </p>
+          </div>
 
           <p className="text-gray-500 mt-3">
             गौशाला के मार्गदर्शक एवं सहयोगी
@@ -211,7 +283,7 @@ const Contact = () => {
         <div className="text-center">
 
           <span className="bg-[#D4AF37] text-white px-4 py-2 rounded-full text-sm">
-            विशेष संरक्षक
+            संरक्षक
           </span>
 
           <div className="mt-5 space-y-4">
@@ -238,7 +310,11 @@ const Contact = () => {
 
               <p className="text-sm text-gray-500">
                 चेयरमैन एवं एम.डी., जिनवाणी चैनल
-              </p>
+              </p>  
+                 <div className="mt-5 bg-green-50 rounded-2xl p-3">
+           
+          </div>
+              
             </div>
 
           </div>
@@ -264,90 +340,252 @@ const Contact = () => {
       </p>
     </div>
 
-    <div className="grid lg:grid-cols-2 gap-8">
+    <section className="py-20 bg-gradient-to-b from-[#F8FFF4] via-[#FFFDF8] to-[#FFF8E7]">
 
-      {/* Management Committee */}
+  <div className="w-full px-4 md:px-8 lg:px-12">
 
-      <div className="bg-white rounded-[28px] p-8 shadow-lg border border-green-100">
+    <div className="relative overflow-hidden rounded-[40px] bg-white border border-green-100 shadow-[0_25px_80px_rgba(0,0,0,0.08)] p-6 md:p-10 lg:p-14">
 
-        <h3 className="text-2xl font-bold text-[#1B5E20] mb-6">
-          प्रबंधन समिति
-        </h3>
+      {/* Background Decorations */}
 
-        <div className="space-y-5">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-green-100 rounded-full blur-3xl opacity-40"></div>
 
-          <div className="flex justify-between border-b pb-3">
-            <span className="font-semibold">अध्यक्ष</span>
-            <span>श्री संजय कुमार जैन</span>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-40"></div>
+
+      <div className="relative z-10">
+
+        {/* Header */}
+
+        <div className="text-center mb-14">
+
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-[#1B5E20] to-[#2E7D32] text-white text-4xl shadow-xl mb-5">
+            👥
           </div>
 
-          <div className="flex justify-between border-b pb-3">
-            <span className="font-semibold">उपाध्यक्ष</span>
-            <span>श्री संदीप मोदी</span>
-          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-3">
+            प्रबंधन समिति
+          </h2>
 
-          <div className="flex justify-between border-b pb-3">
-            <span className="font-semibold">कोषाध्यक्ष</span>
-            <span>श्री कुलदीप मोदी</span>
-          </div>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            गौशाला के सफल संचालन, गौसंरक्षण, सेवा कार्यों एवं
+            विकास गतिविधियों के लिए समर्पित अनुभवी प्रबंधन टीम।
+          </p>
 
-          <div className="pt-2">
-            <p className="font-semibold text-[#FF9933] mb-2">
-              विशेष संरक्षक
+        </div>
+
+        {/* Stats Section */}
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
+
+          <div className="bg-[#F8FFF4] border border-green-100 rounded-3xl p-6 text-center shadow-sm">
+
+            <h3 className="text-3xl font-bold text-[#1B5E20]">
+              3200+
+            </h3>
+
+            <p className="text-gray-600 mt-2">
+              संरक्षित गौवंश
             </p>
 
-            <ul className="space-y-2 text-gray-700">
-              <li>• श्री अरविंद मोदी</li>
-              <li>• श्री नरेश भाई संगवी, मुंबई</li>
-            </ul>
           </div>
+
+          <div className="bg-[#FFF7ED] border border-orange-100 rounded-3xl p-6 text-center shadow-sm">
+
+            <h3 className="text-3xl font-bold text-[#FF9933]">
+              92+
+            </h3>
+
+            <p className="text-gray-600 mt-2">
+              सक्रिय सदस्य
+            </p>
+
+          </div>
+
+          <div className="bg-[#F8FFF4] border border-green-100 rounded-3xl p-6 text-center shadow-sm">
+
+            <h3 className="text-3xl font-bold text-[#1B5E20]">
+              14+
+            </h3>
+
+            <p className="text-gray-600 mt-2">
+              समिति पदाधिकारी
+            </p>
+
+          </div>
+
+          <div className="bg-[#FFF7ED] border border-orange-100 rounded-3xl p-6 text-center shadow-sm">
+
+            <h3 className="text-3xl font-bold text-[#FF9933]">
+              24×7
+            </h3>
+
+            <p className="text-gray-600 mt-2">
+              गौ सेवा
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* Members */}
+
+       <div className="bg-white rounded-[32px] shadow-xl overflow-hidden border border-green-100">
+
+  {/* Header */}
+
+  <div className="bg-gradient-to-r from-[#1B5E20] via-[#2E7D32] to-[#43A047] p-8 text-white">
+
+    <h3 className="text-3xl font-bold">
+      प्रबंधन समिति
+    </h3>
+
+    <p className="text-green-100 mt-2">
+      गौशाला संचालन एवं सेवा प्रबंधन समिति
+    </p>
+
+  </div>
+
+  {/* Committee Table */}
+
+  <div className="divide-y divide-green-50">
+
+    {managementCommittee.map((member, index) => (
+
+      <div
+        key={index}
+        className="group flex flex-col md:flex-row md:items-center md:justify-between px-6 md:px-8 py-5 hover:bg-[#F8FFF4] transition-all duration-300"
+      >
+
+        <div className="flex items-center gap-4">
+
+          <div className="w-12 h-12 rounded-full bg-[#FFF8E7] border-2 border-[#FF9933] flex items-center justify-center font-bold text-[#FF9933]">
+            {index + 1}
+          </div>
+
+          <div>
+
+            <h4 className="font-bold text-lg text-gray-800">
+              {member.name}
+            </h4>
+
+            <p className="text-sm text-gray-500">
+              गौशाला प्रबंधन समिति
+            </p>
+
+          </div>
+
+        </div>
+
+        <div className="mt-3 md:mt-0">
+
+          <span className="bg-green-50 text-[#1B5E20] border border-green-200 px-5 py-2 rounded-full font-semibold">
+            {member.post}
+          </span>
 
         </div>
 
       </div>
 
-      {/* Construction Committee */}
+    ))}
 
-      <div className="bg-white rounded-[28px] p-8 shadow-lg border border-orange-100">
+  </div>
 
-        <h3 className="text-2xl font-bold text-[#FF9933] mb-6">
-          निर्माण समिति
-        </h3>
+</div>
 
-        <p className="text-gray-700 leading-relaxed">
-          गौशाला के विकास एवं निर्माण कार्यों के संचालन हेतु
-          5 सदस्यीय निर्माण समिति का गठन किया गया है।
-        </p>
+        {/* Special Patrons */}
 
-        <div className="mt-5 bg-orange-50 rounded-2xl p-4">
-          समिति के अन्य सदस्यों की जानकारी
-          शीघ्र ही यहां उपलब्ध कराई जाएगी।
+        <div className="mt-16 bg-gradient-to-r from-[#FFF8E7] to-[#F8FFF4] border border-green-100 rounded-[32px] p-8 md:p-10">
+
+          <h3 className="text-3xl font-bold text-center text-[#1B5E20] mb-8">
+            🌹 विशेष संरक्षक
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-6">
+
+            <div className="bg-white rounded-3xl p-6 text-center shadow-md">
+
+              <div className="text-4xl mb-3">
+                🙏
+              </div>
+
+              <h4 className="font-bold text-lg">
+                श्री अरविंद मोदी
+              </h4>
+
+              <p className="text-gray-500 mt-2">
+                संरक्षक
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-3xl p-6 text-center shadow-md">
+
+              <div className="text-4xl mb-3">
+                🌹
+              </div>
+
+              <h4 className="font-bold text-lg">
+                श्री नरेश भाई संगवी
+              </h4>
+
+              <p className="text-gray-500 mt-2">
+                मुंबई
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-3xl p-6 text-center shadow-md">
+
+              <div className="text-4xl mb-3">
+                📺
+              </div>
+
+              <h4 className="font-bold text-lg">
+                श्री नीरज जैन
+              </h4>
+
+              <p className="text-gray-500 mt-2">
+                चेयरमैन एवं एम.डी.
+                <br />
+                जिनवाणी चैनल
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
+
+        {/* Appreciation */}
+
+        {/* <div className="mt-14 bg-gradient-to-r from-[#1B5E20] via-[#2E7D32] to-[#43A047] rounded-[32px] p-8 md:p-10 text-center text-white shadow-xl">
+
+          <h3 className="text-3xl font-bold mb-5">
+            🙏 सेवा, समर्पण एवं संस्कार
+          </h3>
+
+          <p className="max-w-5xl mx-auto text-lg leading-relaxed text-white/90">
+
+            आचार्य श्री विद्यासागर दयोदय गौशाला, तेंदूखेड़ा परिवार
+            सभी सम्माननीय पदाधिकारियों, संरक्षकों एवं सहयोगकर्ताओं का
+            हृदय से आभार व्यक्त करता है। इनके मार्गदर्शन, सहयोग और
+            प्रेरणा से गौसेवा का यह पावन कार्य निरंतर प्रगति की ओर अग्रसर है।
+
+          </p>
+
+        </div> */}
 
       </div>
 
     </div>
+
+  </div>
+
+</section>
 
     {/* Gaushala Committee */}
 
-    <div className="mt-8 bg-white rounded-[28px] p-8 shadow-lg border border-green-100">
-
-      <h3 className="text-2xl font-bold text-[#1B5E20] mb-5">
-        गौशाला समिति
-      </h3>
-
-      <p className="text-gray-700 leading-relaxed">
-        गौशाला के नियमित संचालन, गौमाताओं की देखभाल,
-        प्रशासनिक कार्यों एवं सेवा गतिविधियों के सुचारु संचालन हेतु
-        एक समर्पित समिति कार्यरत है।
-      </p>
-
-      <div className="mt-5 bg-green-50 rounded-2xl p-4">
-        समिति के अन्य सदस्यों की जानकारी
-        शीघ्र ही यहां उपलब्ध कराई जाएगी।
-      </div>
-
-    </div>
+   
 
     {/* Cooperation */}
 
