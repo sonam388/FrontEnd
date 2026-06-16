@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
   FaMoon,
   FaSun,
   FaBars,
+  FaStar,
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
@@ -27,7 +28,8 @@ const logoutHandler = () => {
   );
 
   navigate("/admin");
-};
+}; 
+
   return ( 
     <aside className={`fixed inset-y-0 left-0 z-40 w-72 border-r border-(--border) bg-(--surface) p-6 text-(--text) shadow-2xl transition-transform duration-200 lg:translate-x-0 ${adminSidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
 
@@ -94,6 +96,14 @@ const logoutHandler = () => {
           <FaImages />
           Gallery
         </Link> 
+
+       <Link
+  to="/admin/reviews"
+  onClick={closeAdminSidebar}
+  className="flex items-center gap-4 rounded-xl border border-transparent p-4 transition hover:border-(--border) hover:bg-(--surface-soft)"
+>
+  ⭐ Manage Reviews
+</Link>
 
 
         <Link

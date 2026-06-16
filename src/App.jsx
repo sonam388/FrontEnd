@@ -21,6 +21,8 @@ import Donations from "./admin/pages/Donations";
 import ProtectedRoute from "./admin/components/ProtectedRoute";
 import EditBlog from "./admin/pages/EditBlog";
 import useUIStore from "./store/useUIStore";  
+import ManageReviews from "./admin/pages/ManageReviews"; 
+
 
 
 
@@ -52,7 +54,9 @@ function App() {
         <Route path="/admin/donations" element={<ProtectedRoute><Donations /></ProtectedRoute>} />
         <Route path="/admin/add-blog" element={<ProtectedRoute><AddBlog /></ProtectedRoute>} />
         <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path="/admin/edit-blog/:id" element={<ProtectedRoute><EditBlog /></ProtectedRoute>} />
+        <Route path="/admin/edit-blog/:id" element={<ProtectedRoute><EditBlog /></ProtectedRoute>} /> 
+        <Route path="/admin/reviews"element={<ProtectedRoute> <ManageReviews /></ProtectedRoute> }/>
+
       </Routes>
     </>
   );
