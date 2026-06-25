@@ -22,7 +22,10 @@ import ProtectedRoute from "./admin/components/ProtectedRoute";
 import EditBlog from "./admin/pages/EditBlog";
 import useUIStore from "./store/useUIStore";  
 import ManageReviews from "./admin/pages/ManageReviews"; 
-
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import RefundPolicy from "./pages/RefundPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy";
 
 
 
@@ -45,7 +48,12 @@ function App() {
         <Route path="/gallery" element={<MainLayout><Gallery /></MainLayout>} />
         <Route path="/products" element={<MainLayout><Products /></MainLayout>} />
         <Route path="/blog" element={<MainLayout><Blog /></MainLayout>} />
-        <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
+        <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />  
+        <Route path="/privacy-policy" element={<MainLayout><PrivacyPolicy /></MainLayout>} />
+        <Route path="/terms-conditions" element={<MainLayout><TermsConditions /></MainLayout>} />
+        <Route path="/refund-policy" element={<MainLayout><RefundPolicy /></MainLayout>} />
+        <Route path="/shipping-policy" element={<MainLayout><ShippingPolicy /></MainLayout>} />
+
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin/gallery" element={<ProtectedRoute><AdminGallery /></ProtectedRoute>} />
         <Route path="/admin/blogs" element={<ProtectedRoute><Blogs /></ProtectedRoute>} />
