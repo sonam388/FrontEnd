@@ -10,7 +10,7 @@ import About from "./pages/About";
 import Donation from "./pages/Donation";
 import Gallery from "./pages/Gallery";
 import AdminGallery from "./admin/pages/AdminGallery";
-import Products from "./pages/Products";
+// import Products from "./pages/Products";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Blogs from "./admin/pages/Blogs";
@@ -20,12 +20,14 @@ import Contacts from "./admin/pages/Contacts";
 import Donations from "./admin/pages/Donations";
 import ProtectedRoute from "./admin/components/ProtectedRoute";
 import EditBlog from "./admin/pages/EditBlog";
-import useUIStore from "./store/useUIStore";  
-import ManageReviews from "./admin/pages/ManageReviews"; 
+import useUIStore from "./store/useUIStore";
+import ManageReviews from "./admin/pages/ManageReviews";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import RefundPolicy from "./pages/RefundPolicy";
-import ShippingPolicy from "./pages/ShippingPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy"; 
+import PaymentSuccess from "./pages/PaymentSuccess";
+import PaymentFailed from "./pages/PaymentFailed";
 
 
 
@@ -42,17 +44,19 @@ function App() {
       <ScrollToTop smooth />
       <Routes>
         <Route path="/" element={<MainLayout><Home /></MainLayout>} />
-        <Route path="/about" element={<MainLayout><About /></MainLayout>} />  
-        <Route path="/donation" element={<MainLayout><Donation /></MainLayout>} /> 
+        <Route path="/about" element={<MainLayout><About /></MainLayout>} />
+        <Route path="/donation" element={<MainLayout><Donation /></MainLayout>} />
         <Route path="/volunteer" element={<MainLayout><Volunteer /></MainLayout>} />
         <Route path="/gallery" element={<MainLayout><Gallery /></MainLayout>} />
-        <Route path="/products" element={<MainLayout><Products /></MainLayout>} />
+        {/* <Route path="/products" element={<MainLayout><Products /></MainLayout>} /> */}
         <Route path="/blog" element={<MainLayout><Blog /></MainLayout>} />
-        <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />  
+        <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
         <Route path="/privacy-policy" element={<MainLayout><PrivacyPolicy /></MainLayout>} />
         <Route path="/terms-conditions" element={<MainLayout><TermsConditions /></MainLayout>} />
         <Route path="/refund-policy" element={<MainLayout><RefundPolicy /></MainLayout>} />
         <Route path="/shipping-policy" element={<MainLayout><ShippingPolicy /></MainLayout>} />
+        <Route path="/payment-success" element={<PaymentSuccess />} />
+        <Route path="/payment-failed" element={<PaymentFailed />} />
 
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin/gallery" element={<ProtectedRoute><AdminGallery /></ProtectedRoute>} />
@@ -62,8 +66,8 @@ function App() {
         <Route path="/admin/donations" element={<ProtectedRoute><Donations /></ProtectedRoute>} />
         <Route path="/admin/add-blog" element={<ProtectedRoute><AddBlog /></ProtectedRoute>} />
         <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path="/admin/edit-blog/:id" element={<ProtectedRoute><EditBlog /></ProtectedRoute>} /> 
-        <Route path="/admin/reviews"element={<ProtectedRoute> <ManageReviews /></ProtectedRoute> }/>
+        <Route path="/admin/edit-blog/:id" element={<ProtectedRoute><EditBlog /></ProtectedRoute>} />
+        <Route path="/admin/reviews" element={<ProtectedRoute> <ManageReviews /></ProtectedRoute>} />
 
       </Routes>
     </>

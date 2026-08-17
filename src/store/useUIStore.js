@@ -11,8 +11,8 @@ const resolveInitialTheme = () => {
   if (savedTheme) {
     try {
       const parsed = JSON.parse(savedTheme);
-      if (parsed?.state?.theme === "dark") {
-        return "dark";
+      if (parsed?.state?.theme === "light" || parsed?.state?.theme === "dark") {
+        return parsed?.state?.theme;
       }
     } catch {
       return "light";

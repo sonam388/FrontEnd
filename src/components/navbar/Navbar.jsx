@@ -66,12 +66,12 @@ const Navbar = () => {
             {t("about")}
           </Link>
 
-          <Link
+          {/* <Link
             to="/products"
             className={navLinkClass}
           >
             {t("products")} 
-          </Link>
+          </Link> */}
 
           <Link
             to="/gallery"

@@ -1,20 +1,17 @@
 import { useState } from "react";
-import DonationCards from "../components/donation/DonationCards";
-import ImpactSection from "../components/donation/ImpactSection";
+
+import DonationHero from "../components/donation/DonationHero";
+
 import DonationForm from "../components/donation/DonationForm";
 
 const Donation = () => {
-  const [selectedAmount, setSelectedAmount] = useState(1100);
+  const [amount, setAmount] = useState(501);
 
   return (
     <>
-      <DonationForm
-        selectedAmount={selectedAmount}
-      />
-      <DonationCards
-        onSelectAmount={setSelectedAmount}
-      />
-      <ImpactSection />
+      <DonationHero />
+      
+      <DonationForm amount={amount} />
     </>
   );
 };
